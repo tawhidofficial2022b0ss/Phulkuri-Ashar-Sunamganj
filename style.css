@@ -1,0 +1,119 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#08733d;--dark:#064f31;--lime:#74c928;--orange:#ff9812;--gold:#ffb51b;--cream:#fff9e8;--text:#173b2a;--muted:#5d7065;--white:#fff;--shadow:0 14px 35px rgba(0,70,40,.10)}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans Bengali","Hind Siliguri",sans-serif;color:var(--text);background:#f7fbf0;line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(4,69,42,.97);box-shadow:0 4px 20px rgba(0,0,0,.14)}
+.nav-wrap{min-height:76px;display:flex;align-items:center;gap:22px}
+.brand{width:190px;display:flex;align-items:center}
+.brand img{width:190px;height:62px;object-fit:contain}
+#mainNav{display:flex;gap:8px;align-items:center;margin-left:auto}
+#mainNav a{color:#fff;padding:10px 14px;border-radius:22px;font-weight:600;font-size:15px}
+#mainNav a:hover{background:rgba(255,255,255,.12)}
+.nav-cta,.primary-btn,.secondary-btn,.submit-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font-weight:700;transition:.25s}
+.nav-cta{background:var(--green);color:#fff;padding:11px 20px;border-radius:28px;white-space:nowrap}
+.nav-cta:hover,.primary-btn:hover,.submit-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.menu-btn{display:none;background:none;color:#fff;border:0;font-size:28px;margin-left:auto}
+.hero{min-height:590px;position:relative;overflow:hidden;background:#0b713c}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,75,43,.86),rgba(0,110,55,.45),rgba(0,0,0,.04))}
+.hero-content{position:relative;min-height:590px;display:flex;align-items:center}
+.hero-copy{max-width:570px;color:#fff;padding:55px 0}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:6px 15px;border-radius:25px;margin-bottom:15px}
+.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.05;margin-bottom:20px;font-weight:800;text-shadow:0 4px 15px rgba(0,0,0,.25)}
+.hero h1 span{color:#ffc23c}
+.hero p{font-size:clamp(22px,3vw,34px);font-weight:700;margin-bottom:30px}
+.primary-btn{background:linear-gradient(135deg,#ff8d00,#ffb01e);color:#fff;padding:14px 27px;border-radius:35px;box-shadow:0 10px 25px rgba(255,145,0,.25)}
+.quick-info{background:#fff;box-shadow:var(--shadow);position:relative;margin-top:-25px;z-index:5}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:18px 0}
+.quick-grid div{padding:8px 22px;border-right:1px solid #dbe9df}
+.quick-grid div:last-child{border:0}
+.quick-grid strong,.quick-grid span{display:block}
+.quick-grid strong{color:var(--green)}
+.quick-grid span{color:var(--muted);font-size:14px}
+.section{padding:75px 0}
+.two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:25px}
+.card{background:#fff;border:1px solid #e2eee5;border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+.section-tag{color:var(--green);font-weight:800;font-size:20px;margin-bottom:13px}
+.section-tag.light{color:#fff}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.25;margin-bottom:16px}
+.about-card p{color:#50645a;margin:10px 0}
+.event-card{background:linear-gradient(145deg,#08733d,#0a8d4b);color:#fff}
+.info-row{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:15px}
+.info-row:last-child{border-bottom:0}
+.info-row span{opacity:.85}.info-row b{text-align:right}
+.student-section{background:linear-gradient(135deg,#e5f8dc,#fff9e7);padding:70px 0}
+.student-grid{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:40px}
+.student-grid img{width:100%;border-radius:28px;box-shadow:var(--shadow)}
+.student-grid p{color:var(--muted);margin-bottom:24px}
+.secondary-btn{background:var(--green);color:#fff;padding:12px 23px;border-radius:28px}
+.payment-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:25px;align-items:stretch}
+.fee-card{border-radius:22px;padding:30px;background:linear-gradient(135deg,#ff9812,#ffd23c);color:#fff;display:flex;flex-direction:column;justify-content:center}
+.fee-card .section-tag{color:#fff}.price{font-size:65px;font-weight:800;line-height:1.1}.fee-card p{font-weight:600}
+.payment-methods{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.payment-box{border:2px solid #e9eceb;border-radius:17px;padding:22px;text-align:center;background:#fff}
+.payment-box h3{font-size:24px;margin-bottom:8px}
+.payment-box.bkash h3{color:#d92778}.payment-box.nagad h3{color:#e43624}
+.number{font-size:25px;font-weight:800;letter-spacing:.5px;margin-bottom:12px}
+.copy-btn{border:0;background:var(--green);color:#fff;border-radius:22px;padding:9px 16px;cursor:pointer}
+.notice{margin-top:18px;padding:12px 15px;border-radius:12px;background:#f2f8ee;color:#52655b;font-size:14px}
+.soft-bg{background:#eef8e9}
+.steps-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.steps,.rules{padding-left:24px}.steps li,.rules li{margin:9px 0}
+.small-note{font-size:13px;color:#6a786f;margin-top:15px}
+.check-list{list-style:none}.check-list li{padding:11px 0;border-bottom:1px solid #e8eee9}.check-list li:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}
+.form-layout{display:grid;grid-template-columns:.65fr 1.35fr;gap:30px;align-items:start}
+.form-intro{padding:10px 5px}.form-intro p{color:var(--muted);margin-bottom:22px}
+.mini-card{background:#e8f5df;border-left:5px solid var(--green);padding:15px 18px;border-radius:12px;font-size:18px}
+.mini-card strong{font-size:28px;color:var(--green)}
+.registration-form{background:#fff;border-radius:24px;padding:30px;box-shadow:var(--shadow);border:1px solid #e3eee6}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.registration-form label{display:block;font-weight:700;font-size:14px;margin-bottom:16px}
+input,select,textarea{width:100%;margin-top:7px;border:1px solid #d4e0d8;border-radius:11px;padding:12px 13px;outline:none;background:#fbfdfb;color:#1d392b}
+input:focus,select:focus,textarea:focus{border-color:#55a875;box-shadow:0 0 0 3px rgba(70,170,110,.1)}
+textarea{resize:vertical}
+.agree{display:flex!important;align-items:center;gap:9px;font-weight:500!important}
+.agree input{width:auto;margin:0}
+.submit-btn{width:100%;background:var(--green);color:#fff;padding:14px;border-radius:12px;font-size:17px}
+.form-status{min-height:25px;text-align:center;margin-top:12px;font-weight:700}
+.faq-card details{border-bottom:1px solid #e0e9e2;padding:13px 0}.faq-card details:last-child{border-bottom:0}
+.faq-card summary{cursor:pointer;font-weight:700}.faq-card p{color:var(--muted);padding-top:8px}
+.cta-banner{padding:65px 0;text-align:center;color:#fff;background:linear-gradient(90deg,#07572f,#1e9b4e)}
+.cta-banner h2{font-size:42px}.cta-banner p{margin-bottom:22px}
+footer{background:#063c28;color:#dceee4;padding-top:55px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.1fr 1.3fr;gap:35px;padding-bottom:40px}
+.footer-logo{width:190px;height:70px;object-fit:contain;margin-bottom:10px}
+footer h3{color:#fff;margin-bottom:10px}footer a{display:block;margin:5px 0;color:#cfe5d8}footer p{color:#cfe5d8;margin:5px 0}
+.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);padding:18px;font-size:13px;color:#b7d2c4}
+@media(max-width:900px){
+  .menu-btn{display:block}
+  #mainNav{display:none;position:absolute;top:76px;left:0;right:0;background:#064f31;padding:15px;flex-direction:column;align-items:stretch}
+  #mainNav.open{display:flex}
+  #mainNav a{text-align:center}
+  .nav-cta{display:none}
+  .hero,.hero-content{min-height:520px}
+  .hero-bg{object-position:center}
+  .hero-overlay{background:linear-gradient(90deg,rgba(0,75,43,.9),rgba(0,75,43,.45))}
+  .quick-grid{grid-template-columns:1fr 1fr}
+  .quick-grid div:nth-child(2){border-right:0}.quick-grid div:nth-child(3){border-top:1px solid #dbe9df}.quick-grid div:nth-child(4){border-top:1px solid #dbe9df}
+  .two-col,.student-grid,.payment-grid,.steps-grid,.form-layout{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .container{width:min(94%,1180px)}
+  .brand,.brand img{width:155px}
+  .hero h1{font-size:44px}.hero p{font-size:21px}
+  .hero-content{min-height:500px}
+  .quick-grid{grid-template-columns:1fr}
+  .quick-grid div{border-right:0;border-bottom:1px solid #dbe9df!important}
+  .quick-grid div:last-child{border-bottom:0!important}
+  .payment-methods,.field-row,.footer-grid{grid-template-columns:1fr}
+  .section{padding:52px 0}
+  .card,.registration-form{padding:20px}
+  .price{font-size:52px}
+}
+/* Upcoming competition / event cards */
+.section-heading{text-align:center;max-width:760px;margin:0 auto 35px}.section-heading p{color:var(--muted);font-size:16px}.event-section-title{text-align:center;font-size:25px;font-weight:800;color:#08733d;margin:28px 0 18px}.cultural-title{margin-top:45px}.competition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.competition-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #dfebe3;border-radius:18px;padding:18px;color:#173b2a;box-shadow:0 8px 24px #0000000a;transition:.2s}.competition-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #00000014}.event-icon{font-size:34px}.competition-card span:nth-child(2){flex:1}.competition-card b,.competition-card small{display:block}.competition-card small{color:#718278;margin-top:4px}.competition-card strong{font-size:22px;color:#08733d}.special-event-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}.special-card{display:flex;align-items:center;gap:15px;padding:20px;border-radius:20px;color:#fff;box-shadow:0 10px 28px #00000014}.special-card div{flex:1}.special-card b,.special-card small{display:block}.special-card small{margin-top:5px;opacity:.9}.anniversary-special{background:linear-gradient(135deg,#08733d,#0b9b52)}.mind-special{background:linear-gradient(135deg,#6b4a9e,#8b62c5)}.special-icon{font-size:36px}.config-note{text-align:center;margin-top:28px;color:#687a70;font-size:14px}.config-note strong{color:#08733d}@media(max-width:900px){.competition-grid{grid-template-columns:1fr 1fr}.special-event-grid{grid-template-columns:1fr}}@media(max-width:600px){.competition-grid{grid-template-columns:1fr}.event-section-title{font-size:21px}}
