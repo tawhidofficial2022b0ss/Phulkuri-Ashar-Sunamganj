@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ফুলকুঁড়ি আসর, Sunamganj — আসন্ন প্রতিযোগিতা">
+  <title>ফুলকুঁড়ি আসর, Sunamganj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="home">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="ফুলকুঁড়ি আসর">
+      <img src="assets/logo-transparent.png" alt="ফুলকুঁড়ি আসর লোগো">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="মেনু খুলুন">☰</button>
+    <nav id="mainNav">
+      <a href="#home">হোম</a>
+      <a href="#upcoming">আসন্ন প্রতিযোগিতা</a>
+      <a href="#rules">নিয়মাবলি</a>
+      <a href="#upcoming">রেজিস্ট্রেশন</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+    <a class="nav-cta" href="#upcoming">রেজিস্ট্রেশন করুন <span>→</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <img class="hero-bg" src="assets/hero-banner.jpg" alt="প্রতিযোগিতার ব্যানার">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <div class="eyebrow">জাতীয় শিশু-কিশোর সংগঠন</div>
+        <h1>ফুলকুঁড়ি আসর<br><span>Sunamganj</span></h1>
+        <p>জ্ঞান, সৃজনশীলতা ও সাংস্কৃতিক বিকাশের আয়োজনে অংশ নিন</p>
+        <a class="primary-btn" href="#upcoming">প্রতিযোগিতা দেখুন <span>↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-info">
+    <div class="container quick-grid">
+      <div><strong>আয়োজন</strong><span>৫২ তম প্রতিষ্ঠাবার্ষিকী</span></div>
+      <div><strong>প্রতিযোগিতা ফি</strong><span>প্রতি প্রতিযোগিতা ৳২০</span></div>
+      <div><strong>বিশেষ রেজিস্ট্রেশন</strong><span>৳৫০</span></div>
+      <div><strong>যোগাযোগ</strong><span>০১৮৮৬২৯০১৫১</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="upcoming">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-tag">🏆 আসন্ন প্রতিযোগিতা</div>
+        <h2>৫২ তম প্রতিষ্ঠাবার্ষিকীর আয়োজন</h2>
+        <p>এক বা একাধিক প্রতিযোগিতায় অংশ নিতে পারবেন। প্রতিটি প্রতিযোগিতার রেজিস্ট্রেশন ফি ৳২০।</p>
+      </div>
+
+      <div class="event-section-title">৫২ তম প্রতিষ্ঠাবার্ষিকীর প্রতিযোগিতা সমূহ</div>
+      <div class="competition-grid" id="competitionGrid"></div>
+
+      <div class="event-section-title cultural-title">সাংস্কৃতিক অনুষ্ঠান</div>
+      <div class="competition-grid" id="culturalGrid"></div>
+
+      <div class="special-event-grid">
+        <a class="special-card anniversary-special" href="registration.html?type=anniversary-general" target="_blank">
+          <span class="special-icon">🎉</span><div><b>৫২ তম প্রতিষ্ঠাবার্ষিকী অনুষ্ঠান রেজিস্ট্রেশন</b><small>ব্যক্তিগত তথ্য দিয়ে বিশেষ রেজিস্ট্রেশন — ফি ৳৫০</small></div><span>→</span>
+        </a>
+        <a class="special-card mind-special" href="registration.html?type=mind-marathon" target="_blank">
+          <span class="special-icon">🧠</span><div><b>মাইন্ড ম্যারাথন</b><small>আলাদাভাবে তথ্য দিয়ে রেজিস্ট্রেশন — ফি ৳২০</small></div><span>→</span>
+        </a>
+      </div>
+
+      <p class="config-note">প্রতিযোগিতার নাম, প্রতিষ্ঠাবার্ষিকীর সংখ্যা ও ফি পরিবর্তন করতে <strong>events-config.js</strong> ফাইলটি সম্পাদনা করুন।</p>
+    </div>
+  </section>
+
+  <section class="student-section">
+    <div class="container student-grid">
+      <div>
+        <div class="section-tag">👨‍🎓 আমাদের অংশগ্রহণকারীরা</div>
+        <h2>শেখা, ভাবা ও নিজেকে গড়ার সুযোগ</h2>
+        <p>শিশু-কিশোরদের আগ্রহ, মেধা ও সৃজনশীলতাকে উৎসাহিত করাই এই আয়োজনের লক্ষ্য।</p>
+        <a class="secondary-btn" href="#upcoming">এখনই রেজিস্ট্রেশন করুন</a>
+      </div>
+      <img src="assets/students.svg" alt="শিশু-কিশোর শিক্ষার্থীদের ইলাস্ট্রেশন">
+    </div>
+  </section>
+
+  <section class="section soft-bg" id="payment">
+    <div class="container payment-grid">
+      <div class="fee-card"><div class="section-tag">💳 রেজিস্ট্রেশন ফি</div><div class="price">৳২০</div><p>প্রতি প্রতিযোগিতার জন্য আলাদা ৳২০ ফি। বিশেষ প্রতিষ্ঠাবার্ষিকী রেজিস্ট্রেশন ৳৫০।</p></div>
+      <div class="card payment-card"><div class="section-tag">📱 পেমেন্ট নম্বর</div><div class="payment-methods">
+        <div class="payment-box bkash"><h3>বিকাশ</h3><div class="number" id="bkashNumber">০১৮৪৫১৪৯২৫৫</div><button class="copy-btn" data-copy="01845149255">নম্বর কপি করুন</button></div>
+        <div class="payment-box nagad"><h3>নগদ</h3><div class="number" id="nagadNumber">০১৫৭৫৮৬০৭০৮</div><button class="copy-btn" data-copy="01575860708">নম্বর কপি করুন</button></div>
+      </div><div class="notice">প্রতিটি পেমেন্টের Transaction ID আলাদাভাবে সংরক্ষণ করুন।</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="container two-col">
+      <div class="card"><div class="section-tag">📜 নিয়মাবলি</div><ol class="rules">
+        <li>প্রতিযোগিতা সমূহের প্রতিটির রেজিস্ট্রেশন ফি ৳২০।</li>
+        <li>একজন অংশগ্রহণকারী একাধিক প্রতিযোগিতায় অংশ নিতে পারবে। নির্বাচিত প্রতিটি প্রতিযোগিতার জন্য আলাদা পেমেন্ট করতে হবে।</li>
+        <li>৫২ তম প্রতিষ্ঠাবার্ষিকী অনুষ্ঠান রেজিস্ট্রেশনের ফি ৳৫০।</li>
+        <li>মাইন্ড ম্যারাথন আলাদা রেজিস্ট্রেশন হিসেবে সম্পন্ন করতে হবে।</li>
+        <li>Transaction ID সঠিকভাবে দিতে হবে; পেমেন্ট যাচাইয়ের পর রেজিস্ট্রেশন নিশ্চিত হবে।</li>
+        <li>সফল রেজিস্ট্রেশনের পর Application Copy প্রিন্ট/PDF হিসেবে সংরক্ষণ করা যাবে।</li>
+      </ol></div>
+      <div class="card faq-card"><div class="section-tag">❓ সাধারণ জিজ্ঞাসা</div>
+        <details><summary>একাধিক প্রতিযোগিতায় কি অংশ নেওয়া যাবে?</summary><p>হ্যাঁ। একটি ফর্মে একাধিক প্রতিযোগিতা নির্বাচন করে প্রতিটির ৳২০ করে পেমেন্ট তথ্য দেওয়া যাবে।</p></details>
+        <details><summary>Application Copy কী?</summary><p>রেজিস্ট্রেশনের সামগ্রিক তথ্য ও নির্বাচিত প্রতিযোগিতার নামসহ একটি প্রিন্টযোগ্য কপি।</p></details>
+        <details><summary>মাইন্ড ম্যারাথন কি একই ফর্মে?</summary><p>না। মাইন্ড ম্যারাথনের জন্য আলাদা রেজিস্ট্রেশন অপশন আছে।</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>চলো, একসাথে গড়ি সুন্দর আগামী</h2>
+      <p>জ্ঞান ও সৃজনশীলতার পথে আজই যুক্ত হও।</p>
+      <a class="primary-btn" href="#upcoming">এখনই রেজিস্ট্রেশন করুন</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo-transparent.png" alt="ফুলকুঁড়ি আসর" class="footer-logo">
+      <p>পৃথিবীকে গড়তে হলে, সবার আগে নিজেকে গড়ো।</p>
+    </div>
+    <div>
+      <h3>দ্রুত লিংক</h3>
+      <a href="#home">হোম</a>
+      <a href="#upcoming">আসন্ন প্রতিযোগিতা</a>
+      <a href="#rules">নিয়মাবলি</a>
+      <a href="registration.html" target="_blank">রেজিস্ট্রেশন</a>
+    </div>
+    <div>
+      <h3>যোগাযোগ</h3>
+      <p>০১৮৮৬২৯০১৫১</p>
+      <p>avisarder201@gmail.com</p>
+      <p>শোলঘর, সুনামগঞ্জ সদর, সুনামগঞ্জ</p>
+    </div>
+    <div>
+      <h3>আয়োজক</h3>
+      <p>Phulkuri Ashar Central</p>
+      <p>Tawhid Alam Muhaj &amp; Avi Sarder</p>
+    </div>
+  </div>
+  <div class="copyright">© ২০২৬ ফুলকুঁড়ি আসর, Sunamganj। সর্বস্বত্ব সংরক্ষিত।</div>
+</footer>
+
+<script src="events-config.js"></script>
+<script>
+function renderEvents(){
+ const make=(e)=>`<a class="competition-card" href="registration.html?type=competition&event=${encodeURIComponent(e.id)}" target="_blank"><span class="event-icon">${e.icon}</span><span><b>${e.title}</b><small>রেজিস্ট্রেশন ফি ৳${SITE_CONFIG.competitionFee}</small></span><strong>→</strong></a>`;
+ document.getElementById("competitionGrid").innerHTML=SITE_CONFIG.competitions.filter(e=>e.category==="প্রতিযোগিতা").map(make).join("");
+ document.getElementById("culturalGrid").innerHTML=SITE_CONFIG.competitions.filter(e=>e.category==="সাংস্কৃতিক অনুষ্ঠান").map(make).join("");
+}
+renderEvents();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

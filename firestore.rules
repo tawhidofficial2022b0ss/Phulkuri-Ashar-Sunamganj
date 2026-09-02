@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /registrations/{registrationId} {
+      allow create: if
+        request.resource.data.registrationType in ['competition','anniversary-general','mind-marathon'] &&
+        request.resource.data.participantName is string && request.resource.data.participantName.size() >= 2 && request.resource.data.participantName.size() <= 100 &&
+        request.resource.data.guardianName is string && request.resource.data.guardianName.size() >= 2 && request.resource.data.guardianName.size() <= 100 &&
+        request.resource.data.institution is string && request.resource.data.institution.size() >= 2 && request.resource.data.institution.size() <= 150 &&
+        request.resource.data.class is string && request.resource.data.class.size() >= 1 && request.resource.data.class.size() <= 30 &&
+        request.resource.data.phone is string && request.resource.data.phone.matches('^01[3-9][0-9]{8}$') &&
+        request.resource.data.payments is list && request.resource.data.payments.size() >= 1 && request.resource.data.payments.size() <= 10 &&
+        request.resource.data.totalAmount is number && request.resource.data.totalAmount >= 20 && request.resource.data.totalAmount <= 500 &&
+        request.resource.data.status == 'Pending';
+
+      allow read, update: if request.auth != null && request.auth.uid == 'YOUR_ADMIN_UID';
+      allow delete: if false;
+    }
+  }
+}
